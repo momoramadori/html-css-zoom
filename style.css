@@ -3,3 +3,101 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: black;
+}
+
+header {
+    text-align: right;
+    height: 60px;
+    padding: 10px;
+}
+
+header button {
+    margin: 10px 0;
+    padding: 10px;
+    color: white;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+header button:nth-of-type(2) {
+    margin-right: 15px;
+}
+
+main {
+    height: calc( 100vh - 140px);
+    overflow-y: scroll;
+}
+
+.cam-wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px;
+    overflow-y: scroll;
+
+
+}
+
+.single-cam {
+    height: 150px;
+    width: 250px;
+    position: relative;
+    border:  2px solid black;
+}
+
+.single-cam span {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    bottom: 0;
+    left: 0;
+    padding: 5px;
+}
+
+.single-cam span i::after {
+    content: "";
+    background-color: red;
+    position: absolute;
+    height: 3px;
+    width: 25px;
+    left: 0;
+    top: 45%;
+    transform: rotate(-45deg);
+}
+
+.single-cam:last-of-type {
+    border: 2px solid yellow;
+}
+
+footer {
+    height: 80px;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.footer-left, .footer-center,.footer-right {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.icon-wr {
+    padding: 0 20px;
+}
+
+.icon-wr i {
+    padding-bottom: 5px;
+}
+
+.fa-external-link-alt {
+    color: lightgreen;
+}
