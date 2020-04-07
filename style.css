@@ -20,6 +20,7 @@ header button {
     color: white;
     background-color: #333;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 header button:nth-of-type(2) {
@@ -76,9 +77,9 @@ main {
 
 footer {
     height: 80px;
+    justify-content: space-between;
     background-color: #333;
     display: flex;
-    justify-content: space-between;
     color: white;
 }
 
@@ -90,8 +91,16 @@ footer {
     color: white;
 }
 
+.footer-center {
+    display: none;
+}
+
+.footer-left, .footer-right {
+    justify-content: center;
+}
 .icon-wr {
     padding: 0 20px;
+    cursor: pointer;
 }
 
 .icon-wr i {
@@ -100,4 +109,20 @@ footer {
 
 .fa-external-link-alt {
     color: lightgreen;
+}
+.footer-right {
+    background-color: #444;
+}
+.footer-right p {
+    flex-shrink: 0;
+    color: red;
+    padding: 20px;
+    cursor: pointer;
+}
+
+@media (min-width: 992px) {
+
+    .footer-center {
+        display: flex;
+    }
 }
